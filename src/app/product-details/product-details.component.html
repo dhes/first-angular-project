@@ -3,17 +3,17 @@
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.description }}</h4>
-  <p>{{ product.implemented }}</p>
-  <p>{{ product.gender }}</p>
-  <p>{{ product.low_age }}</p>
-  <p>{{ product.high_age }}</p>
-  <p>{{ product.interval }}</p>
-  <p>{{ product.category }}</p>
-  <p>{{ product.tobacco_status }}</p>
-  <p>{{ product.pack_years }}</p>
-  <p>{{ product.years_since_quit_smoking }}</p>
-  <p>{{ product.low_dob }}</p>
-  <p>{{ product.high_dob }}</p>
+  <p>Implemented?: {{ product.implemented }}</p>
+  <p>Gender: {{ product.gender }}</p>
+  <p>Minimum Age: {{ product.low_age }}</p>
+  <p>Maximum Age: {{ product.high_age }}</p>
+  <p>Interval (months): {{ product.interval }}</p>
+  <p>Category: {{ product.category }}</p>
+  <p>Tobacco Status: {{ product.tobacco_status }}</p>
+  <p>Pack-Years: {{ product.pack_years }}</p>
+  <p>Years Since Quit Smoking: {{ product.years_since_quit_smoking }}</p>
+  <p>Minimum Date of Birth: {{ product.low_dob }}</p>
+  <p>Maximum Date of Birth: {{ product.high_dob }}</p>
 
   <button (click)="addToCart(product)">Buy</button>
 </div>
