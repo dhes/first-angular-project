@@ -14,10 +14,10 @@ export const products = [
     years_since_quit_smoking: null, 
     low_dob: null, 
     high_dob: null
-  }
+  }, 
   {
     condition: "abdominal aortic aneurysm", 
-    lname: "Current smoker - AAA screening", 
+    name: "Current smoker - AAA screening", 
     description: "Screen men aged 65-75 y, who have ever smoked, 1 time for abdominal aortic aneurysm (AAA), using ultrasonography. ", 
     implemented: true, 
     gender: "M", 
