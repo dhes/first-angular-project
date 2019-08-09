@@ -7,15 +7,30 @@
   <p *ngIf="product.gender">
     Gender: {{ product.gender }}
   </p>
-  <p>Minimum Age: {{ product.low_age }}</p>
-  <p>Maximum Age: {{ product.high_age }}</p>
-  <p>Interval (months): {{ product.interval }}</p>
+  <p *ngIf="product.low_age">
+    Minimum Age: {{ product.low_age }}
+  </p>
+  <p *ngIf="product.high_age">
+    Maximum Age: {{ product.high_age }}
+  </p>
+  <p *ngIf="product.interval">
+    Interval (months): {{ product.interval }}
+  </p>
   <p>Category: {{ product.category }}</p>
-  <p>Tobacco Status: {{ product.tobacco_status }}</p>
-  <p>Pack-Years: {{ product.pack_years }}</p>
-  <p>Years Since Quit Smoking: {{ product.years_since_quit_smoking }}</p>
-  <p>Minimum Date of Birth: {{ product.low_dob }}</p>
-  <p>Maximum Date of Birth: {{ product.high_dob }}</p>
-
+  <p *ngIf="product.tobacco_status">
+    Tobacco Status: {{ product.tobacco_status }}
+  </p>
+  <p *ngIf="product.pack_years">
+    Pack-Years: {{ product.pack_years }}
+  </p>
+  <p *ngIf="product.years_since_quit_smoking">
+    Years Since Quit Smoking: {{ product.years_since_quit_smoking }}
+  </p>
+  <p *ngIf="product.low_dob">
+    Minimum Date of Birth: {{ product.low_dob }}
+  </p>
+  <p *ngIf="product.high_dob">
+    Maximum Date of Birth: {{ product.high_dob }}
+  </p>
   <button (click)="addToCart(product)">Buy</button>
 </div>
